@@ -1,0 +1,6 @@
+Edit Animal
+<%= form_tag "/animals/#{@animal.id}", method: :patch do %>
+  <div>Species: <input type="text" name="species" value="<%=@animal.species%>"></div>
+  <div>Number <input type="text" name="number" value="<%=@animal.number%>"</div>
+  <div><input type="submit" name="submit" value="Update Animal Info"></div>
+<%end%>
